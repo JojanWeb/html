@@ -6,7 +6,22 @@
   <title>Document</title>
 </head>
 <body>
-
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html">Index</a>
+      </li>
+      <li>
+        <a href="archivo1.html">Archivo 1</a>
+      </li>
+      <li>
+        <a href="archivo2.html">Archivo 2</a>
+      </li>
+      <li>
+        <a href="formulario.html">Formularios</a>
+      </li>
+    </ul>
+  </nav>
   <form action="controlador" method="get">
     <div>
     <label for="edad">Ingrese su edad</label>
@@ -28,7 +43,7 @@
     </div>
 
     <label for="correo">Ingrese su correo</label>
-    <input type="email" id="correo" pattern="+@+"\.>
+    <input type="email" id="correo" name="correo" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required/>
     </div> 
 
     <div>
