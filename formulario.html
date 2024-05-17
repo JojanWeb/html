@@ -20,9 +20,12 @@
       <li>
         <a href="formulario.html">Formularios</a>
       </li>
+      <li>
+        <a href="tabla.html">Tabla</a>
+      </li>
     </ul>
   </nav>
-  <form action="controlador" method="get">
+  <form action="controlador" method="post" enctype="">
     <div>
     <label for="edad">Ingrese su edad</label>
     <input type="number" name="edad" id="edad" min="0" max="20" step="1" value="5" readonly>
@@ -39,7 +42,7 @@
       <label for="color">Seleccion Color</label>
     </div>
     <div>
-      <input type="color" id="color">
+      <input type="color" id="color" name="color">
     </div>
 
     <label for="correo">Ingrese su correo</label>
@@ -48,11 +51,50 @@
 
     <div>
       <label for="telefono">Ingrese su telefono</label>
-      <input type="text" id="telefono" required placeholder="Ingrese su telefono" title="Ingrese telefono" pattern=[0,-9]{0,10}>
+      <input  name="telefono" id="telefono" required placeholder="Ingrese su telefono" title="Ingrese telefono" pattern=[0-9]{0,10}>
+    </div>
+
+
+    <div>
+      <label for="ciudad">Seleccione ciudad</label>
+      <select name="ciudad" id="ciudad" disabled>
+        <option value="1">Girón</option>
+        <option value="2">Bucaramanga</option>
+        <option value="3" selected>Florida</option>
+      </select>
     </div>
 
     <div>
-      <button type="submit">Guardar</button>
+      <input type="radio" name="sexo" id="hombre">
+      <label for="hombre">Masculino</label>
+      <input type="radio" name="sexo" id="mujer">
+      <label for="mujer">Femenino</label>
+    </div>
+    <br>
+    <div>
+        <label>
+        <input type="checkbox" name="opt">HTML
+        </label>
+
+        <label>
+        <input type="checkbox" name="opt">CLI
+        </label>
+
+        <label>
+        <input type="checkbox" name="opt">GIT
+        </label>
+
+        <label>
+        <input type="checkbox" value="checked">MIN
+        </label>
+    </div>
+
+    <div>
+      <input type="file" name="" id=  "" accept="image/*" multiple>
+    </div>
+
+    <div>
+      <button type="submit" >Guardar</button>
     </div>
   </form>
 
