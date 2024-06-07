@@ -1,0 +1,28 @@
+h1, h2{
+  text-align: center;
+}
+
+p > span {
+  color: blueviolet;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin: 40px 60px 80px 10px;
+  margin: 120px 200px 10px;
+}
+
+.caja {
+  box-sizing: border-box;
+  width: 600px;
+  height: 300px;
+  background: crimson;
+  margin: 80px;
+  border: solid  5px #000;
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+}
