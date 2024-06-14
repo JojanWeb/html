@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.anuncio{
+  display: block;
+  width: 250px;
+  box-shadow: 3px 3px 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+.title{
+  color: rgb(172, 32, 32);
+}
+
+.texto{
+  font-size: 15px;
+  padding: 10px;
+}
+
+.boton{
+  padding: 10px 20px;
+  background: rgb(172, 32, 32);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin: 20px 0;
+}
+
+
+.spidy{
+  display: block;
+  width: 250px;
+  border-radius: 5px 5px 0 0;
+  margin: 10px auto;
+  
+}
+
+.goku{
+  display: block;
+  width: 300px;
+  margin: 10px auto;
+  filter: drop-shadow(0 0 20px yellow);
+}
